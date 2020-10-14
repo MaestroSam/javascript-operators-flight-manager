@@ -4,11 +4,11 @@ function Flights() {
 
     //Checking for a positive interger value for passengers and capacity provided
 
-    if (Number.isSafeInteger(passengers) === false || passengers < 0) {
+    if (Number.isSafeInteger(Number(passengers)) === false || passengers < 0) {
       throw new Error(
         "The number of passengers must be a positive interger value **"
       );
-    } else if (Number.isSafeInteger(capacity) === false || capacity < 0) {
+    } else if (Number.isSafeInteger(Number(capacity)) === false || capacity < 0) {
       throw new Error(
         "The capacity of the flight must be a positive interger value"
       );
