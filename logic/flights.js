@@ -32,7 +32,7 @@ function Flights() {
     } else if (totalDistance > 0.75 * distLimit && totalDistance <= distLimit) {
         return "The revision needs to be done within the next month";
     } else if (totalDistance > distLimit) {
-        throw new Error;
+        throw new Error("The revision must be done immediately!!!");
     }
   }
   return { calculateNumberOfFlights, checkAircraftRevision };

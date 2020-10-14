@@ -8,7 +8,7 @@
          }, 0);
          // throw an Error if flightCapacity is exceeded!
          if (totalNumberOfPassengers > flightCapacity) {
-           throw new Error();
+           throw new Error("The total number of passengers ("+totalNumberOfPassengers+") exceededs the flight capacity ("+ flightCapacity +"). Review acccordingly!");
          }
          return totalNumberOfPassengers;
        }
